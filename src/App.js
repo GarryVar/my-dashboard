@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Dashbord from './components/Dashbord/Dashbord';
 
-function App() {
+
+const  App = ({onChangeFunc, inputValue, items}) => {
+
+  let [valueX, changedValueX] = useState(0);
+  let [valueY, changedValueY] = useState(0);
+
+
+  function changeXYCoordinates (e) { 
+    changedValueX(e.clientX);
+    changedValueY(e.clientY);
+  };
+
+  
+  function onShowCoordinates(e) {
+    changeXYCoordinates(e)
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Dashbord
+        items={items}
+        inputValue={inputValue}
+        onChangeFunc={onChangeFunc}
+        showCoors={onShowCoordinates}
+        valueX={valueX}
+        valueY={valueY}/>
     </div>
-  );
+  )
 }
 
 export default App;

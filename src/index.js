@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
+import {onChangeFunc, state } from './components/state';
+import { items } from './data/items';
+// import 'animate.css';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App
+      items={items}
+      inputValue={state.inputValue}
+      onChangeFunc={onChangeFunc}
+    />
   </React.StrictMode>
 );
 
