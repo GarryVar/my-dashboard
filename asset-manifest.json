@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/my-dashboard/static/css/main.228c5453.css",
+    "main.js": "/my-dashboard/static/js/main.0adf800a.js",
+    "static/js/453.5a746546.chunk.js": "/my-dashboard/static/js/453.5a746546.chunk.js",
+    "static/media/duplex.png": "/my-dashboard/static/media/duplex.b187a2c70e01db7e840d.png",
+    "static/media/sedona.png": "/my-dashboard/static/media/sedona.1d773783cebf113055db.png",
+    "static/media/cat-energy.png": "/my-dashboard/static/media/cat-energy.47b9107fd1f59eb52845.png",
+    "index.html": "/my-dashboard/index.html",
+    "main.228c5453.css.map": "/my-dashboard/static/css/main.228c5453.css.map",
+    "main.0adf800a.js.map": "/my-dashboard/static/js/main.0adf800a.js.map",
+    "453.5a746546.chunk.js.map": "/my-dashboard/static/js/453.5a746546.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.228c5453.css",
+    "static/js/main.0adf800a.js"
+  ]
+}
